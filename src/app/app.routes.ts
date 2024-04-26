@@ -14,11 +14,6 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export const routes: Routes = [
     { path: "", component: LandingPageComponent },
-    { path: "outside", component: OutsideComponent },
     { path: "article/:post", component: ArticleComponent },
-    { path: "apar", component: AparComponent },
-    { path: "LPG", component: LPGComponent },
-    { path: "small-fire", component: SmallFireComponent },
-    { path: "building", component: BuildingComponent },
     { path: "**", component: NotFoundComponent },
 ];
