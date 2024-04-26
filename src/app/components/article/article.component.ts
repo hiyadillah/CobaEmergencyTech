@@ -9,7 +9,6 @@ import { NotFoundComponent } from '../not-found/not-found.component';
 import { log } from 'console';
 import { CommonModule } from '@angular/common';
 import { Article } from '../../interfaces/article';
-import { BackgroundImgPipe } from '../../pipes/background-img.pipe';
 
 @Component({
   selector: 'app-article',
@@ -22,7 +21,6 @@ import { BackgroundImgPipe } from '../../pipes/background-img.pipe';
     BuildingComponent,
     NotFoundComponent,
     CommonModule,
-    BackgroundImgPipe,
   ],
   templateUrl: './article.component.html',
   styleUrl: './article.component.css'

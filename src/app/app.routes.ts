@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-import { MainMenuComponent } from './components/main-menu/main-menu.component';
-import path from 'node:path';
-import { OutsideComponent } from './components/outside/outside.component';
-import { InsideComponent } from './components/inside/inside.component';
 import { BigFireComponent } from './components/big-fire/big-fire.component';
 import { LPGComponent } from './components/lpg/lpg.component';
 import { SmallFireComponent } from './components/small-fire/small-fire.component';
