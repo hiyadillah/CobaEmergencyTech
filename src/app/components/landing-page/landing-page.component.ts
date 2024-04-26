@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { Article } from '../../interfaces/article';
 import { Contact } from '../../interfaces/contact';
@@ -6,7 +6,7 @@ import { Contact } from '../../interfaces/contact';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })

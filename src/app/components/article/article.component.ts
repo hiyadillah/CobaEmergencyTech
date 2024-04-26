@@ -7,7 +7,7 @@ import { BuildingComponent } from '../building/building.component';
 import { ActivatedRoute } from '@angular/router';
 import { NotFoundComponent } from '../not-found/not-found.component';
 import { log } from 'console';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Article } from '../../interfaces/article';
 
 @Component({
@@ -21,6 +21,7 @@ import { Article } from '../../interfaces/article';
     BuildingComponent,
     NotFoundComponent,
     CommonModule,
+    NgOptimizedImage,
   ],
   templateUrl: './article.component.html',
   styleUrl: './article.component.css'
