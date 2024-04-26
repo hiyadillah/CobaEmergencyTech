@@ -1,0 +1,55 @@
+<main class="container mb-5">
+    <section class="d-flex flex-column">
+        <h1 class="fw-bolder mb-2 mt-5">Kontak Emergency</h1>
+        <div class="mb-3">
+            <hr class="" style="width: 4rem;height: 5px;background-color: red;color: red;">
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let contact of contacts">
+                <div class="card shadow-sm mb-3 h-100"
+                    style="background-color: ghostwhite;border-radius: 15px 15px 3px 3px;">
+                    <img [src]="contact.icon" class="img-fluid mb-3 card-img-top"
+                        style="border-radius: 15px 15px 0px 0px;" [alt]="contact.title">
+                    <div class="card-body">
+                        <!-- style="color: aqua;width: 2rem;height: 2rem;"> -->
+                        <h3 class="card-title">{{ contact.title }}</h3>
+                        <p class="card-text">{{ contact.body }}</p>
+                        <div class="">
+                            <div class="d-flex justify-content-start">
+                                <h4 class="ms-3 me-4">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </h4>
+                                <h4 class="card-text fw-italic text-danger me-2">{{ contact.no1 }}</h4>
+                                <h4 class="card-text fw-italic text-danger" *ngIf="contact.no2!=''"> / {{ contact.no2 }}
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-column">
+        <h1 class="fw-bolder mb-2 mt-5">Tips</h1>
+        <div class="mb-3">
+            <hr class="" style="width: 4rem;height: 5px;background-color: turquoise;color: turquoise;">
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let article of articles">
+                <div class="card shadow-sm mb-3 h-100"
+                    style="background-color: ghostwhite;border-radius: 3px 15px 3px 15px;">
+                    <div class="card-body">
+                        <h1 class="my-3">
+                            <i [class]="article.icon+' text-info border rounded-circle p-2'"
+                                style="background-color: whitesmoke;"></i>
+                        </h1>
+                        <h3 class="card-title">{{ article.title }}</h3>
+                        <p class="card-text">{{ article.body }}</p>
+                        <a [href]="article.link" class="fw-medium" style="color: red;text-decoration: none;">Read More
+                            ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
